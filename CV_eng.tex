@@ -1,0 +1,361 @@
+	% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[letterpaper]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{fontawesome}
+\usepackage{marvosym}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[sc,osf]{mathpazo}
+
+\usepackage[spanish,es-nodecimaldot]{babel}		
+%\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% Set your name here
+\def\name{José Luis Baroja Manzano}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+\def\footerlink{}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {statistics, Bayes, inference, data mining},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.25in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+
+\newcommand\textline[4][t]{%
+  \par\smallskip\indent\parbox[#1]{.7\textwidth}{\raggedright\texttt{}#2}%
+  \parbox[#1]{.05\textwidth}{\raggedright#3}%
+  \parbox[#1]{.25\textwidth}{\raggedleft{#4}}\par%
+}
+
+\newcommand{\tab}{\hspace{.05\textwidth}}
+
+
+\begin{document}
+
+% Place name at left
+{\huge \name}
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\vspace{0.25in}
+
+
+\begin{minipage}{0.55\linewidth}
+	\begin{tabular}{rl}	
+						& Lab 25\\
+ 						& Psychology School\\
+ 						& National Autonomous University of Mexico\\
+ 						& \\
+						& Av. Universidad 3004\\
+ 						& Col. Copilco-Universidad\\
+ 						& Coyoacán \\
+ 						& Ciudad de México\\
+ 						& 04510
+	\end{tabular}
+\end{minipage}
+\begin{minipage}{\linewidth}
+ 	\begin{tabular}{rl}
+%    	\faicon{mobile-phone} 	& {\tt (55) 25 76 83 22}\\
+    \faicon{envelope} 		& {\tt j.luis.baroja@gmail.com} \\
+%    \faicon{linkedin}		& \href{https://mx.linkedin.com/pub/jose-luis-baroja/100/430/255}
+%    									{\tt https://mx.linkedin.com/pub/}\\
+%							& \href{https://mx.linkedin.com/pub/jose-luis-baroja/100/430/255}
+%									{\tt jose-luis-baroja/100/430/255}
+ 	   						
+  	\end{tabular}
+\end{minipage}
+
+
+
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+\section*{Education}
+\begin{itemize}
+\setlength\itemsep{-.25em}
+\setlength{\itemindent}{-.125in}
+\item\textline{{\bf Specialist in Applied Statistics}}{\hspace{1pt}}{2017 (expected)}
+  \item{Institute for Research in Applied Mathematics and Systems}
+  \item{National Autonomous University of Mexico (UNAM)}
+  
+  \item\textline{{\bf B.A. Psychology}---with honors}{\hspace{1pt}}{2015}
+  \item{Psychology School}
+  \item{UNAM}
+  \begin{itemize}
+    \item\emph{Thesis:} Studies on The Monty Hall Problem: assessment of reinforcement learning models.
+  	\item\emph{Adviser:} Arturo Bouzas Riaño, Ph.D.
+  \end{itemize}
+
+\item\textline{{\bf Study Abroad}}{\hspace{1pt}}{Fall 2011}
+  \item{University of California, Los Angeles}
+\end{itemize}
+
+
+
+
+
+\section*{Research Experience}
+\begin{itemize}
+\setlength\itemsep{-.25em}
+\setlength{\itemindent}{-.125in}
+	\item\textline{\bf{Research Assistant}}{\hspace{1pt}}{June 2011 - present}
+	\item{Psychology School}
+	\item{UNAM}
+	\begin{itemize}
+		\item {My work in the lab consists in planning, implementing, and analyzing experiments on human and animal choice. Most of the experiments focus on how humans and animals make decisions when they have noisy information about an uncertain environment that changes dynamically in time, which is analogous to many real-life scenarios.\\ 
+		In order to use collected data to answer different experimental questions I rely on several tools for statistical inference. In particular, I make extensive use of data visualization techniques and Bayesian methods.}
+	\end{itemize}
+\end{itemize}
+
+
+
+
+
+\section*{Teaching Experience}
+
+\subsection*{Undergraduate Courses}
+\begin{itemize}
+\setlength\itemsep{-.25em}
+\setlength{\itemindent}{-.125in}
+	\item \textline{{\bf Research and Data Analysis II}---Assistant Professor}{\hspace{1pt}}{Spring 2017} 
+	\item {Psychology School}
+	\item {UNAM}
+	\item \textline{{\bf Research and Data Analysis III}---Assistant Professor}{\hspace{1pt}}{Fall 2016} 
+	\item {Psychology School}
+	\item {UNAM}
+	\item \textline{{\bf Frontiers in Psychology}---Assistant Professor}{\hspace{1pt}}{Fall 2016} 
+	\item {Psychology School}
+	\item {UNAM}
+	\item \textline{{\bf Research and Data Analysis}---Teaching Assistant (Intern)}{\hspace{1pt}}{Fall 2015} 
+	\item {Psychology School}
+	\item {UNAM}
+	\item \textline{{\bf History of Psychology}---Teaching Assistant (Intern)}{\hspace{1pt}}{Fall 2013} 
+	\item {Psychology School}
+	\item {UNAM}
+	\item \textline{{\bf Learning and Adaptive Behavior II}---Teaching Assistant (Intern)}{\hspace{1pt}}{Fall 2012} 
+	\item {Psychology School}
+	\item {UNAM}
+	\item \textline{{\bf Learning and Adaptive Behavior I}---Teaching Assistant (Intern)}{\hspace{1pt}}{Spring 2012} 
+	\item {Psychology School}
+	\item {UNAM}
+\end{itemize}
+
+\subsection*{Seminars and Workshops}
+\begin{itemize}
+\setlength\itemsep{-.25em}
+\setlength{\itemindent}{-.125in}
+	\item \textline{{\bf Introduction to Bayesian Data Analysis}}{\hspace{1pt}}{April 26-27, 2016} 
+	\item{Institute of Neurobiology}
+	\item {UNAM}
+	\item \textline{{\bf Bayesian Inference and Data Analysis}}{\hspace{1pt}}{April 20-22, 2015} 
+	\item{Research Center of Compared Behaviour and Cognition}
+	\item {Guadalajara University}
+	\item \textline{{\bf Models for Statistical Inference}}{\hspace{1pt}}{January 12-23, 2015} 
+	\item {Psychology School}
+	\item {UNAM}
+	\item \textline{{\bf Principles of Statistical Inference}}{\hspace{1pt}}{December 15-19, 2014} 
+	\item {Psychology School}
+	\item {UNAM}
+	\item \textline{{\bf Probabilistic Inference}}{\hspace{1pt}}{Fall, 2014} 
+	\item {Psychology School}
+	\item {UNAM}
+	\item \textline{{\bf Graphical Models for Statistical Inference}}{\hspace{1pt}}{June 16-20, 2014} 
+	\item {Psychology School}
+	\item {UNAM}
+	\item {}
+	\item \textline{{\bf R Graphics}}{\hspace{1pt}}{July 22-26, 2013} 
+	\item {Psychology School}
+	\item {UNAM}
+	\item \textline{{\bf Introduction to R}}{\hspace{1pt}}{June 12-18, 2013} 
+	\item {Psychology School}
+	\item {UNAM}
+	\item \textline{{\bf Introduction to R}}{\hspace{1pt}}{January 14-18, 2013} 
+	\item {Psychology School}
+	\item {UNAM}
+\end{itemize}
+
+
+
+
+
+\section*{Publications}
+
+
+
+ \subsection*{Journal Articles}
+\begin{itemize}
+\setlength\itemsep{-.25em}
+\setlength{\itemindent}{-.125in}
+	\item Chávez, M. E., Villalobos, E., Baroja, J. L. \& Bouzas, A. (2017). Hierarchical Bayesian modeling of intertemporal choice. \emph{Judgment and Decision Making, 12}(1), 19-28.
+	\item Covarrubias, P., Cabrera, F., Jiménez, A. \& Baroja, J. L. (submitted). On the generality of invariants in the senses considered as perceptual systems: exploratory movements in probabilistic environments.
+\end{itemize}
+
+ \subsection*{Work in Progress}
+\begin{itemize}
+\setlength\itemsep{-.25em}
+\setlength{\itemindent}{-.125in}
+	\item Baroja, J. L. (in prep.). Modelos Bayesianos Jerárquicos.
+	\item Baroja, J. L. (in prep.). Código en R para Regresión Lineal.
+\end{itemize}
+
+\subsection*{Conference Posters}
+\begin{itemize}
+\setlength\itemsep{-.25em}
+\setlength{\itemindent}{-.125in}
+	\item Baroja, J. L. \& Bouzas, A. (2016). \emph{Learning to wait: dynamic persistence in uncertain environments.} Proceedings of the 57th Annual Meeting of the Psychonomic Society. Boston, Massachusetts.
+	\item{Bouzas, A., Segura, A., Baroja, J. L. \& Villarreal, M. (2016). \emph{Dynamic choice in concurrent random interval - random ratio schedules.} Proceedings of the 39th Annual Meeting of the Society for the Quantitative Analyses of Behavior. Chicago, Illinois.}
+	\item Martínez, B., Baroja, J. L., Tovar, A. E. \& Palafox, G. (2015). \emph{``Close-far'' and size discrimination in 3D apparent motion sequences.} Proceedings of the 56th Annual Meeting of the Psychonomic Society. Chicago, Illinois.
+	\item Baroja, J. L. (2015). \emph{Aprendizaje dinámico en secuencias de respuesta.} V Seminario Internacional sobre Comportamiento y Aplicaciones. Ciudad de México.
+	\item Martínez, B., Baroja, J. L., Tovar, A. E. \& Palafox, G. (2015). \emph{``Cerca-lejos'' y discriminación de tamaño en secuencias 3-D en movimiento aparente.} V Seminario Internacional sobre Comportamiento y Aplicaciones. Ciudad de México.
+	\item Rojas, M., Baroja, J. L., Orduña, V. \& Sanabria, F. (2015). \emph{Ejecución de ratas Wistar y SHR en un programa de intervalo fijo mínimo.} V Seminario Internacional sobre Comportamiento y Aplicaciones. Ciudad de México.
+	\item Martínez, B., Baroja, J. L., Tovar, A. E. \& Palafox, G. (2015). \emph{``Cerca-lejos'' y discriminación de tamaño en secuencias 3-D en movimiento aparente.} VI Coloquio de Investigación en Psicología Fisiológica y Experimental. Ciudad de México.
+	\item Baroja, J. L. (2015). \emph{Aprendiendo y utilizando la validez relativa de pistas inciertas}. XXV Congreso Mexicano de Análisis de la Conducta. Xalapa, Veracruz.
+	\item Martínez, B., Tovar, A. E., Baroja, J. L. \& Palafox, G. (2015). \emph{``Cerca-lejos'', discriminación de profundidad en movimiento aparente.} I Congreso Mexicano de Medicina Espacial. San Luis Potosí, San Luis Potosí.
+	\item Baroja, J. L. (2014). \emph{Tutorial en modelos Bayesianos jerárquicos}. XXIV Congreso Mexicano de Análisis de la Conducta. Tlaquepaque, Jalisco.
+	\item Baroja, J. L. (2014). \emph{Tutorial en inferencia probabilística: Principios generales}. En el simposio ``Inferencia Probabilística y Modelos Psicológicos''. V Coloquio de Investigación en Psicología Fisiológica y Experimental. Ciudad de México.
+	\item López, A., Baroja, J. L., Ortiz, G. \& Trujano, R. E. (2014). \emph{Heurísticos para la toma de decisiones: Take-the-Best}. En el simposio ``Inferencia Probabilística y Modelos Psicológicos''. V Coloquio de Investigación en Psicología Fisiológica y Experimental. Ciudad de México.
+	\item Baroja, J. L. (2014). \emph{Desesperación racional: Incertidumbre temporal y perseverancia}. Repensando la Psicología: III Coloquio Estudiantil. Ciudad de México.
+	\item Baroja, J. L., Orduña, V., Palafox, G. \& Bouzas, A. (2013). \emph{Desempeño humano y animal en el dilema de Monty Hall}. XXIII Congreso Mexicano de Análisis de la Conducta. Cuernavaca, Morelos.
+	\item Baroja, J. L. (2013). \emph{El problema de Monty Hall}. IV Coloquio de Investigación en Psicología Fisiológica y Experimental. Ciudad de México.
+	\item Baroja, J. L., Der Hagopian, H., López, A. \& Trujano, D. (2013). \emph{Diseño de un simulador para el estudio de la ``zona del dilema''}. IV Coloquio de Investigación en Psicología Fisiológica y Experimental. Ciudad de México.
+	\item Baroja, J. L. (2013). \emph{El efecto de inversión de tasas base}. Repensando la Psicología: II Coloquio Estudiantil. Ciudad de México.
+	\item Baroja, J. L. \& Bouzas, A. (2012). \emph{Conductas de riesgo: Agresión}. En el simposio ``?`Es Irracional el Comportamiento de Riesgo en Jóvenes Adultos?'' XX Congreso Mexicano de Psicología y III Congreso Iberoamericano de Psicología y Salud. Campeche, Campeche.
+\end{itemize}
+
+\subsection*{Popular Science}
+\begin{itemize}
+\setlength\itemsep{-.25em}
+\setlength{\itemindent}{-.125in}
+	\item Baroja, J. L. (2010). Ojos asombrosos. \emph{?`Cómo ves?, 135,} pp. 34.
+\end{itemize}
+
+
+
+
+
+
+
+\section*{Technical Skills}
+
+\subsection*{Software}
+\begin{itemize}
+\setlength\itemsep{-.25em}
+\setlength{\itemindent}{-.125in}
+	\item Data Managment and Statistical Analysis: {\bf R-project}, {\bf Python}, {\bf MySQL}, {\bf MATLAB}, {\bf JAGS}
+	\item Experimental Frameworks: {\bf PsychoPy}, {\bf Psychtoolbox}
+	\item Typesetting: \LaTeX
+	\item Operative Systems: {\bf Linux (Ubuntu)}, {\bf Mac}, {\bf Windows}
+	\item Version Control: {\bf Git}
+\end{itemize}
+
+\subsection*{Languages}
+\begin{itemize}
+\setlength\itemsep{-.25em}
+\setlength{\itemindent}{-.125in}
+	\item{\bf Spanish} First Language
+	\item{\bf English} TOEFL iBT
+	\item{\bf German} Zertifikat Deutsch B1
+	\item{\bf French} 390 course hours
+\end{itemize}
+
+
+
+
+
+
+\section*{Grants}
+\begin{itemize}
+\setlength\itemsep{-.25em}
+\setlength{\itemindent}{-.125in}
+	\item \textline{{\bf PAPIME PE310016} (Intern)}{\hspace{1pt}}{2015} 
+	\item {Project: ``Development of Virtual Tools for Teaching Behavioral and Cognitive Sciences''}
+	\item \textline{{\bf PAPIIT IN307214} (Intern)}{\hspace{1pt}}{2014} 
+	\item {Project: ``Learning in Dynamical Environments''}
+	\item \textline{{\bf CONACyT 104396} (Intern)}{\hspace{1pt}}{2011} 
+	\item {Project: ``Risky Behaviors: Assessment of Choice Models''}
+\end{itemize}
+
+
+
+
+
+\section*{References}
+\begin{itemize}
+\setlength\itemsep{-.25em}
+\setlength{\itemindent}{-.125in}
+	\item{\bf Arturo Bouzas}, Professor, National Autonomous University of Mexico. {\tt abouzasr@gmail.com}
+	\item{\bf Germán Palafox}, Professor, National Autonomous University of Mexico. {\tt germanpalafox@gmail.com}
+	\item{\bf Vladimir Orduña}, Professor, National Autonomous University of Mexico. {\tt vladord@gmail.com}
+	\item{\bf Óscar Zamora}, Professor, National Autonomous University of Mexico. {\tt ozamoraa@gmail.com}
+\end{itemize}
+
+% Footer
+\bigskip
+\begin{center}
+  \begin{footnotesize}
+    Last updated: January 30, 2017 \\
+  \end{footnotesize}
+\end{center}
+
+\end{document}
